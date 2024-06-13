@@ -1,0 +1,37 @@
+:root {
+    --cor-primaria: #00FACC;
+    --cor-secundaria: #37A691;
+    --cor-terciaria: #354F4A;
+    --cor-fundo: #2F3836;
+    --fonte-p: rubik;
+  }
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.redline{
+    text-align: center;
+    font-weight: bold;
+    color: #00FACC;
+    border: 1px solid blue;
+    display: block;
+    background-color: #A62934;
+    color: white;
+    text-transform: uppercase;
+    font-size: 10px;
+    text-decoration: none;
+    padding: 10px 5px;
+    border-radius: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+main{
+    background: #000;
+    width: auto;
+    box-sizing: border-box;
+    
+}
