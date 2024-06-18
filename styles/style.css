@@ -42,10 +42,10 @@ main{
     max-width: 1140px;
 }
 
-.section-tryhard{
+.section-tryhard {
     height: 150px;
-    background-image: url("/imgs/VALORANT_phx_jett_2.jpg");
-    background-size: cover;
+    background-image:   url("/imgs/valorant.png");
+    
     .img{
         width: 50px;
     }

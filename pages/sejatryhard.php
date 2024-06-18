@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -47,7 +47,7 @@
         <section class="section-init">
             <div class="">
                 <div class="text-center">
-                    <img src="imgs/valorant-removebg-preview.png"  alt="">
+                    <img src="imgs/valorant-logo.png" style="width: 100px; alt="">
                 </div>
                 <div>
                 </div>
