@@ -24,7 +24,7 @@
           
         ?>
 
-        <div class="<?= $key == 1 ? 'carousel-item active' : 'carousel-item'; ?>">
+        <div class="<?= $key == 1 ? 'carousel-item active' : 'carousel-item'; ?> ">
            <a href="vendas/<?=$item->id?>"><img  src="<?= $item->images2?>" class="d-block w-100" alt="..."></a>   
         </div>
 
@@ -46,17 +46,17 @@
       <div class="ms-5" style="color: red;">
         <h1>Lancamentos</h1>
       </div>
-      <div class="row row-cols-2 row-cols-md-2 g-2 d-flex">
+      <div class="row row-cols-2 row-cols-md-2 g-2 d-flex justify-content-center row-cols-md-4" style="width: rem18px;">
       <?php foreach($dadosJogos as $item){ 
         
         ?>
 
-        <div class="col ps-5">
+        <div class="col-5">
           <div class="card">
             <img src="<?=$item->images?>" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Valorant</h5>
-              <p class="card-text btn btn-danger">"<?=$item->valor?>"</p>
+              <p class="card-text btn btn-danger" style="font-size: 10px;"><?=$item->valor?></p>
             </div>
           </div>
         </div>
@@ -69,45 +69,25 @@
       <div class="ms-5" style="color: red;">
         <h1>Novidades</h1>
       </div>
-      <div class="row row-cols-2 row-cols-md-2 g-2 d-flex">
-        <div class="col ps-5">
+      <div class="row row-cols-2 g-2 d-flex justify-content-center row-cols-md-4 ">
+      <?php foreach($dadosJogos as $item){
+
+        ?>
+      
+      
+        <div class="col-5">
           <div class="card">
             <img src="imgs/VALORANT_phx_jett_2.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Valorant</h5>
-              <p class="card-text btn btn-danger" style="color: aliceblue;">150,00$</p>
+              <h5 class="card-title"></h5>
+              <p class="card-text btn btn-danger" style="color: aliceblue;"></p>
             </div>
           </div>
         </div>
-        <div class="col pe-5">
-          <div class="card">
-            <img src="imgs/VALORANT_phx_jett_2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Valorant</h5>
-              <p class="card-text btn btn-danger">100,00$</p>
-            </div>
-          </div>
-        </div>
-        <div class="col ps-5">
-          <div class="card">
-            <img src="imgs/Valorant_Wallpaper_Killbanners_galleryimage.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Valorant</h5>
-              <p class="card-text btn btn-danger">200,00$</p>
-            </div>
-          </div>
-        </div>
-        <div class="col pe-5">
-          <div class="card">
-            <img src="imgs/Valorant_Wallpaper_Killbanners_galleryimage.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Valorant</h5>
-              <p class="card-text btn btn-danger">150,00$</p>
-            </div>
-          </div>
-        </div>
+        <?php }?>
       </div>
-    </section>
+
+      </section>
     <section class="section-tryhard">
       <div class="d-flex justify-content-between">
         <div class="d-flex flex-column gap-5 pe-5">

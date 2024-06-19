@@ -11,7 +11,7 @@
 
 <body>
    
-    <main>
+    <main class="main-vendas">
         <section>
             <div style="padding-top: 10px; padding-bottom: 10px;">
                 <div class="redline">
@@ -44,7 +44,7 @@
                 </button>
             </div>
         </section>
-        <section class="ps-3 pe-3 pt-2 border-bottom border-black">
+        <section class="ps-3 pe-3 pt-2 border-bottom border-black bg-white">
             <div class="border border-black rounded">
                 <div class="d-flex column-gap-5 justify-content-between m-2">
                     <div>
@@ -78,7 +78,8 @@
                 <div class="btn btn-primary"> jogue agora</div>
             </div>
         </section>
-        <section class="ms-3 pe-3 pt-2 border-bottom border-black">
+
+        <section class="ms-3 pe-3 pt-2 border-bottom border-black bg-white">
             <div>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, atque mollitia. Eveniet, architecto, est a quas recusandae ad unde minima porro temporibus adipisci dolor. Nobis porro quasi iure placeat eveniet.
             </div>
