@@ -1,9 +1,5 @@
 <?php
-    $url = "http://localhost/projeto-jogo-lal/API/games.php";
-    $dadosApi = file_get_contents($url);
-    //transformar APi em Jsom
-    $dadosJogos = json_decode($dadosApi);
-    //print_r($dadosJogos)
+   
 ?>
 
 <main>
@@ -19,18 +15,21 @@
         <div class="carousel-inner">
 
         <?php 
-          foreach($dadosJogos as $item){
-            
+         $url = "http://localhost/projeto-jogo-lal/API/games.php/";
+         $dadosApi = file_get_contents($url);
+         //transformar APi em Jsom
+         $dadosJogos = json_decode($dadosApi);
+         //print_r($dadosJogos);
+          foreach($dadosJogos as $key => $item){
           
         ?>
 
-        <div class="carousel-item active">
-           <a href="http://localhost/projeto-jogo-lal/pages/vendas.php/<?=$item->id?>"> <img src="<?=$item->images?>" class="d-block w-100" alt="..."></a>
-            
-          </div>
+        <div class="<?= $key == 1 ? 'carousel-item active' : 'carousel-item'; ?>">
+           <a href="vendas/<?=$item->id?>"><img  src="<?= $item->images2?>" class="d-block w-100" alt="..."></a>   
+        </div>
 
-
-        <?php }?>
+        <?php 
+      }?>
         
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
