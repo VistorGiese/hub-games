@@ -1,0 +1,63 @@
+.navbar {
+  background: #222;
+}
+.navbar .navbar-brand img {
+  height: 60px;
+}
+.navbar .nav-link {
+  font: 22px "Rubik", Inter, Arial;
+  color: #FFF;
+  text-transform: uppercase;
+}
+.navbar .nav-link:hover {
+  color: #0DCAF0;
+}
+.navbar .navbar-nav .nav-link.show {
+  color: #0DCAF0;
+}
+.navbar .dropdown-menu {
+  background: #222;
+  border-radius: 0;
+  border-top: 5px solid #0DCAF0;
+}
+.navbar .dropdown-menu .dropdown-item {
+  font: 20px "Rubik", Inter, Arial;
+  text-transform: uppercase;
+  color: #0DCAF0;
+}
+.navbar .btn {
+  margin-left: 5px;
+}
+
+.btn {
+  font: 20px "Rubik", Inter, Arial;
+  border-radius: 0;
+}
+
+h1 {
+  font: 36px "Rubik", Inter, Arial;
+  color: #222;
+  margin: 30px;
+}
+
+.card {
+  margin-bottom: 15px;
+  box-shadow: 0 0 10px #CCC;
+}
+
+.footer {
+  color: #FFF;
+  padding: 20px;
+  background: #222;
+  margin-top: 25px;
+}
+
+body {
+  margin-top: 80px;
+}
+
+.navbar-toggler {
+  background: #FFF;
+}
+
+/*# sourceMappingURL=style.css.map */
