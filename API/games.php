@@ -14,16 +14,14 @@
     batalha final que decidirá o seu destino.</p>",
     "poster"=>"{$path}poster1.jpeg",
     "banner"=>"{$path}miniespada.jpg",
-    "requisitos" =>"placa de video pentium 5",
+    "requisitos" =>"placa de video pentium 5<br>lalal",
 );
 
     $games[2] = array("id"=>2, "nome"=>"a arte da ocultação",
      "descricao"=>"Você é um habilidoso shinobi em um jogo 2D, lutando contra hordas de esqueletos. Acumule pontos derrotando inimigos cada vez mais desafiadores. Alcance a pontuação final para vencer e trazer paz ao mundo assombrado.",
     "poster"=>"{$path}poster2.jpeg",
     "banner"=>"{$path}ninja.jpg",
-    "requisitos" =>" <ul>
-                        <li> olha só </li>
-                    </ul>",
+    "requisitos" =>"lslssllsl",
 );
 
     $games[3] = array("id"=>3, "nome"=>"ben 10",

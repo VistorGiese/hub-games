@@ -26,7 +26,7 @@
     ?>
     <div class="row text-center">
         <div class="col-12">
-            <p class="pes text-center"><a style="text-decoration: none; color :white; " href="<?=$dados2->link?>" target="_blank">jogar agora</a></p>
+            <p class="pes text-center btn btn btn-warning"><a style="text-decoration: none; color :white; " href="<?=$dados2->link?>" target="_blank">jogar agora</a></p>
         </div>
     </div>
     </div>

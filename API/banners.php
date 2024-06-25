@@ -5,7 +5,7 @@
     $path = "http://localhost/projeto-jogo-lal-2/images/";
 
     $banners[0] = array("nome"=>"o mini espada",
-    "imagem"=>"{$path}miniesapada.jpeg",
+    "imagem"=>"{$path}miniespada.jpg",
     "id_game"=>1);
 
     $banners[1] = array("nome"=>"a arte da ocultação",
@@ -17,11 +17,11 @@
     "id_game"=>3);
 
     $banners[3] = array("nome"=>"parabellum",
-    "imagem"=>"{$path}parabellum.jpg",
+    "imagem"=>"{$path}parabellum.png",
     "id_game"=>4);
 
     $banners[4] = array("nome"=>"survivor",
-    "imagem"=>"{$path}survivor.jpg",
+    "imagem"=>"{$path}survivor.png",
     "id_game"=>5);
 
 

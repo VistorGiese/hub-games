@@ -1,65 +1,36 @@
-<div class="container">
-    <h2 class="text-center"><p>Entre em Contato</p></h2>
-    <form class="row g-3 needs-validation" novalidate>
-  <div class="col-md-4">
-    <label for="validationCustom01" class="form-label"><p>Nome</p></label>
-    <input type="text" class="form-control" id="validationCustom01" value="" required>
-    <div class="valid-feedback">
-      Lindo nome!
+<div class="container" >
+  <form name="conta" action="contato" method="post">
+    <div class="text-center py-2">
+      <h1>
+        <p class="my-3">entre em contato</p>
+      </h1>
     </div>
-  </div>
-  <div class="col-md-4">
-    <label for="validationCustom02" class="form-label"><p>Sobrenome</p></label>
-    <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-    <div class="valid-feedback">
-      lindo nome!
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label"><p>digite seu email</p></label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text"></div>
     </div>
-  </div>
-  <div class="col-md-4">
-    <label for="validationCustomUsername" class="form-label"><p>E-mail</p></label>
-    <div class="input-group has-validation">
-      <span class="input-group-text" id="inputGroupPrepend">@</span>
-      <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-      <div class="invalid-feedback">
-        Porfavor escreva um e-mail valido
-      </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label"><p>digite sua mensagem</p></label>
+      <textarea class="form-control" rows="5" id="exampleInputPassword1"></textarea>
     </div>
-  </div>
-  <div class="col-12">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-      <label class="form-check-label" for="invalidCheck">
-        Agree to terms and conditions
-      </label>
-      <div class="invalid-feedback">
-        <p>You must agree before submitting</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-12">
-    <button class="btn btn-primary" type="submit">Submit form</button>
-  </div>
-</form>
+    <button type="submit" class="btn btn-primary">enviar!</button>
+  </form>
+  <br><br><br><br><br><br>
 </div>
 
-<script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
-(() => {
-  'use strict'
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+      $email = $_POST["email"] ?? NULL;
+      $date = $_POST["date"] ?? NULL;
+      $senha = $_POST["senha"] ?? NULL;
+      $senhaConfirm = $_POST["senhaConfirm"] ?? NULL;
+    function mensagem($msg){
+      echo "<script>alert('{$msg}');history.back();</script>";
+    };
 
-  // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  const forms = document.querySelectorAll('.needs-validation')
-
-  // Loop over them and prevent submission
-  Array.from(forms).forEach(form => {
-    form.addEventListener('submit', event => {
-      if (!form.checkValidity()) {
-        event.preventDefault()
-        event.stopPropagation()
-      }
-
-      form.classList.add('was-validated')
-    }, false)
-  })
-})()
-</script>
+    if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      mensagem("Escreva um email válido");
+    }
+  }
+?>
