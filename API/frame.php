@@ -2,28 +2,26 @@
     header('Access-Control-Allow-Origin: *');
     header("Content-type: application/json; charset=utf-8");
 
-    $path = "http://localhost/projeto-jogo-lal-2/images/";
 
-    $fotos[1] = array(
-        
+    $frame[1] = array(
+        "link" => "jogos/pirata/index1.html"
+    );
+    $frame[2] = array(
+        "link" => "jogos/jogothiago/index.html"
     );
 
-    $fotos[2] = array(
-        
+    $frame[3] = array(
+     "link" => "jogos/ben10/index.html"
     );
 
-    $fotos[3] = array(
-     
+    $frame[4] = array(
+       "link" => "jogos/parabellum/index.html"
     );
 
-    $fotos[4] = array(
-       
-    );
-
-    $fotos[5] = array(
-        
+    $frame[5] = array(
+        "link" => "jogos/survivor/index.html"
     );
 
 
-    echo json_encode($fotos);
+    echo json_encode($frame);
 

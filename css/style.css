@@ -10,7 +10,7 @@
   text-transform: uppercase;
 }
 .navbar .nav-link:hover {
-  color: #0DCAF0;
+  color: yellow;
 }
 .navbar .navbar-nav .nav-link.show {
   color: #0DCAF0;
@@ -23,7 +23,7 @@
 .navbar .dropdown-menu .dropdown-item {
   font: 20px "Rubik", Inter, Arial;
   text-transform: uppercase;
-  color: #0DCAF0;
+  color: yellow;
 }
 .navbar .btn {
   margin-left: 5px;
@@ -36,8 +36,8 @@
 
 h1 {
   font: 36px "Rubik", Inter, Arial;
-  color: #222;
   margin: 30px;
+  color: white;
 }
 
 .card {
@@ -58,6 +58,14 @@ body {
 
 .navbar-toggler {
   background: #FFF;
+}
+
+p {
+  color: white;
+}
+
+.pes {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

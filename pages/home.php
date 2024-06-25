@@ -32,7 +32,7 @@ $dadosBanner = json_decode($dadosApi);
 </div>
 
 <div class="container">
-    <h1 class="text-center">
+    <h1 class="text-center" style="color: white;">
         Jogos em Destaque
     </h1>
     <?php
@@ -48,7 +48,7 @@ $dadosBanner = json_decode($dadosApi);
                         <img src="<?=$dados->poster?>"
                         alt="<?=$dados->nome?>" class="card-img-top">
                         <div class="card-text text-center">
-                            <p><strong><?=$dados->nome?></strong></p>
+                            <h2><strong><?=$dados->nome?></strong></h2>
                             <p>
                                 <a href="game/<?=$dados->id?>" title="Detalhes do Jogo" class="btn btn-danger">
                                     <i class="fas fa-search"></i>

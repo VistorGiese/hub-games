@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tryhard - consiga sempre</title>
-    <meta name="description" content="Sua página de Games, com lançamentos e jogos pagos e gratuitos">
-    <meta name="keywords" content="games, jogos, lançamentos">
+    <title>Tryhard - Consiga Sempre</title>
+    <meta name="description" content="A pagina de games para quem ama vencer">
+    <meta name="keywords" content=" jogos">
 
-    <base href="http://localhost/stem/">
-
+    <base href="http://localhost/projeto-jogo-lal-2/">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jersey+25&display=swap" rel="stylesheet">
@@ -25,7 +25,7 @@
     <link rel="shortcut icon" href="images/icone.png">
 </head>
 
-<body>
+<body class="bg-black">
     <?php
         //buscar os dados da API de games
         $url = "http://localhost/projeto-jogo-lal-2/api/games.php";
@@ -35,8 +35,19 @@
         $dadosJogos = json_decode($dadosApi);
 
         //print_r($dadosJogos);
+        
+        
+        $url2 = "http://localhost/projeto-jogo-lal-2/api/frame.php";
+        
+        $dadosApi2 = file_get_contents($url2);
+       
+        $dadosFrame = json_decode($dadosApi2);
+
+        
+    
     ?>
-    <nav class="navbar navbar-expand-lg fixed-top">
+    
+    <nav class="navbar navbar-expand-lg fixed-top bg-danger">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.php">
                 <img src="images/logo-tryhard.png" alt="tryhard">
@@ -68,7 +79,7 @@
                 </ul>
                 <div class="d-flex">
                     <a href="contato" title="Contato"
-                    class="btn btn-info">
+                    class="btn btn-warning">
                         <i class="fas fa-envelope"></i>
                         Entre em Contato
                     </a>
@@ -101,10 +112,10 @@
         ?>
     </main>
 
-    <footer class="footer">
+    <footer class="footer bg-danger">
       <section class="d-flex justify-content-around" style="height: 100px; ">
           <div clas="d-flex">
-              <h3 style="color: black;">Redes Sociais </h3>
+              <h3>Redes Sociais </h3>
               <a href="mailto:vitorgiese@hotmail.com?subject=Duvidas" style="width: 30px;"><i class="fa-solid fa-envelope"></i></a>
 
               <a href="https://wa.me/5544991583564"><i class="fa-solid fa-phone"></i></a>
@@ -113,7 +124,7 @@
 
           </div>
           <div class="creditos">
-            <P style="color: black;">Desenvolvido por <br> Vitor Giese &copy;</P>
+            <P>Desenvolvido por <br> Vitor Giese &copy;</P>
         </div>
       </section>
       

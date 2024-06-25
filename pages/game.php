@@ -1,6 +1,8 @@
 <?php
     $dados = $dadosJogos->$codigo; 
+    $dados2 = $dadosFrame->$codigo;
 ?>
+
 <div class="banner">
     <img src="<?=$dados->banner?>" alt="<?=$dados->banner?>" class="w-100">
 </div>
@@ -11,31 +13,35 @@
             <img src="<?=$dados->poster?>" alt="<?=$dados->nome?>" class="w-100">
         </div>
         <div class="col-12 col-md-9">
-            <p>
+            <p class="pes">
                 <?=$dados->descricao?>
             </p>
         </div>
     </div>
     
-    <h2 class="text-center">confira o jogo abaixo</h2>
+    <h2 class="pes text-center">confira o jogo abaixo</h2>
     <div class="row">
-        <?php
-            $dadosFotos = file_get_contents("http://localhost/projeto-jogo-lal-2/api/frame.php");
-            $dadosFotos = json_decode($dadosFrame);
-            //só as fotos do jogo
-            $dados = $dadosFrame->$codigo;
-
-            
-            foreach($dados as $frame) {
-                ?>
-                <div class="col-12 col-md-3">
-                    <frame>
-                        
-                    </frame>
-                </div>
-                <?php
-                
-            }
-        ?>
+    <?php
+    $dados = $dadosJogos->$codigo; 
+    ?>
+    <div class="row text-center">
+        <div class="col-12">
+            <p class="pes text-center"><a style="text-decoration: none; color :white; " href="<?=$dados2->link?>" target="_blank">jogar agora</a></p>
+        </div>
     </div>
+    </div>
+
+    <?php
+    $dados = $dadosJogos->$codigo; 
+    ?>
+    <div class="row text-center">
+        <div class="center">
+            <div class="btn btn-danger w-25">
+                <div class="col-12" >
+                    <p class="text-center"><?=$dados->requisitos?></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>

@@ -10,7 +10,7 @@
 
     $equipe[2] = array("nome"=>"Thiago",
     "cargo"=>"Criador do jogo A arte da ocultação",
-    "foto"=>"{$path}thiago.jpeg");
+    "foto"=>"{$path}thiago.png");
 
     $equipe[3] = array("nome"=>"João Felipe Bosco Brigato",
     "cargo"=>"Criador do jogo ben 10",

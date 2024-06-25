@@ -13,7 +13,7 @@ $font2: Inter, Arial, Tahoma;
         color: #FFF;
         text-transform: uppercase;
         &:hover {
-            color: $secondary;
+            color: yellow;
         }
     }
     .navbar-nav .nav-link.show {
@@ -26,11 +26,12 @@ $font2: Inter, Arial, Tahoma;
         .dropdown-item {
             font: 20px $font1;
             text-transform: uppercase;
-            color: $secondary;
+            color: yellow;
         }
     }
     .btn {
         margin-left: 5px;
+        
     }
 }
 
@@ -41,8 +42,8 @@ $font2: Inter, Arial, Tahoma;
 
 h1 {
     font: 36px $font1;
-    color: $primary;
     margin: 30px;
+    color: white;
 }
 
 .card {
@@ -63,4 +64,12 @@ body {
 
 .navbar-toggler {
     background: #FFF;
+}
+
+p{
+    color: white;
+}
+
+.pes{
+    color: white;
 }
