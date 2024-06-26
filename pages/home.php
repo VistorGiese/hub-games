@@ -1,5 +1,5 @@
 <?php
-$url = "http://localhost/projeto-jogo-lal-2/api/banners.php";
+$url = "https://tryy-hard.000webhostapp.com/api/banners.php";
 
 $dadosApi = file_get_contents($url);
 

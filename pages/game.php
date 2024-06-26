@@ -26,7 +26,7 @@
     ?>
     <div class="row text-center">
         <div class="col-12">
-            <p class="pes text-center btn btn btn-warning"><a style="text-decoration: none; color :white; " href="<?=$dados2->link?>" target="_blank">jogar agora</a></p>
+            <p class="pes text-center btn btn btn-warning rounded"><a style="text-decoration: none; color :white; " href="<?=$dados2->link?>" target="_blank">jogar agora</a></p>
         </div>
     </div>
     </div>
@@ -36,9 +36,9 @@
     ?>
     <div class="row text-center">
         <div class="center">
-            <div class="btn btn-danger w-25">
+            <div class="btn btn-danger w-25 ">
                 <div class="col-12" >
-                    <p class="text-center"><?=$dados->requisitos?></p>
+                    <p class="text-center rounded"><?=$dados->requisitos?></p>
                 </div>
             </div>
         </div>

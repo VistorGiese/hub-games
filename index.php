@@ -8,7 +8,7 @@
     <meta name="description" content="A pagina de games para quem ama vencer">
     <meta name="keywords" content=" jogos">
 
-    <base href="http://localhost/projeto-jogo-lal-2/">
+    <base href="https://tryy-hard.000webhostapp.com/">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +28,7 @@
 <body class="bg-black">
     <?php
         //buscar os dados da API de games
-        $url = "http://localhost/projeto-jogo-lal-2/api/games.php";
+        $url = "https://tryy-hard.000webhostapp.com/api/games.php";
         //importar os dados da API
         $dadosApi = file_get_contents($url);
         //transformar de JSON para array ou objeto
@@ -37,7 +37,7 @@
         //print_r($dadosJogos);
         
         
-        $url2 = "http://localhost/projeto-jogo-lal-2/api/frame.php";
+        $url2 = "https://tryy-hard.000webhostapp.com/api/frame.php";
         
         $dadosApi2 = file_get_contents($url2);
        

@@ -2,7 +2,7 @@
     header('Access-Control-Allow-Origin: *');
     header("Content-type: application/json; charset=utf-8");
 
-    $path = "http://localhost/projeto-jogo-lal-2/images/";
+    $path = "https://tryy-hard.000webhostapp.com/images/";
 
     $banners[0] = array("nome"=>"o mini espada",
     "imagem"=>"{$path}miniespada.jpg",
